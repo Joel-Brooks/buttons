@@ -1,0 +1,29 @@
+<script type='text/javascript'>
+
+document.body.style.backgroundImage = "url('wood.jpg')";
+
+$(function() {
+  Dashing.widget_base_dimensions = [75, 84]
+  Dashing.numColumns = 22
+});
+
+$(".gridster > ul").gridster().data('gridster').draggable().disable();
+</script>
+
+<% content_for :title do %>Saws and Multi-Scores <% end %>
+
+<div data-id="reload" data-view="Reload" data-title="Reload" style="display: none"></div>
+
+<div class="gridster">
+  <ul>
+
+<%# Air Compressor 2 Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="AirCompressor2" onClick="location.href='myfilename.php" data-view="HotStatus" data-title="Call Maintenance"  ></div>
+    </li>
+  </ul>
+<a href="?run=true">Click Me!</a>
+
+<%# Bottom Scroller %>
+    <div data-id="ticker" data-view="Ticker" style="display: none;" ></div>  
+</div>

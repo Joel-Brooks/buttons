@@ -1,0 +1,114 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [75, 90]
+  Dashing.numColumns = 22
+
+});
+$(".gridster > ul").gridster().data('gridster').draggable().disable();
+</script>
+
+<script type='text/javascript'>
+$(function() {
+
+Dashing.cycleGridsterLayout('[[{"col":5,"row":1,"size_x":4,"size_y":2},{"col":3,"row":5,"size_x":4,"size_y":2},{"col":5,"row":5,"size_x":4,"size_y":4},{"col":7,"row":5,"size_x":4,"size_y":4},{"col":9,"row":5,"size_x":10,"size_y":4},{"col":11,"row":5,"size_x":2,"size_y":2},{"col":13,"row":5,"size_x":2,"size_y":2},{"col":15,"row":5,"size_x":2,"size_y":2},{"col":15,"row":7,"size_x":2,"size_y":2},{"col":3,"row":7,"size_x":2,"size_y":2},{"col":5,"row":7,"size_x":2,"size_y":2},{"col":7,"row":7,"size_x":2,"size_y":2},{"col":9,"row":7,"size_x":2,"size_y":2},{"col":11,"row":7,"size_x":2,"size_y":2},{"col":13,"row":7,"size_x":2,"size_y":2},{"col":17,"row":7,"size_x":2,"size_y":2},{"col":17,"row":5,"size_x":2,"size_y":2}]]')
+});
+</script>
+
+<% content_for(:title) { "Compressor Pressure" } %>
+<div data-id="reload" data-view="Reload" data-title="Reload" style="display: none"></div>
+<div class="gridster">
+  <ul>
+
+
+<%# WINK LOGO %>
+    <li data-row="1" data-col="1" data-sizex="10" data-sizey="4">
+      <div data-id="picture" data-view="BigImage" data-image=""
+        data-max="true"
+      ></div>
+    </li>
+
+<%# Flamex Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="Flamex" data-view="HotStatus" data-title="FlameX Status"  ></div>
+    </li>
+
+<%# North Bindicator Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="NBindicator" data-view="HotStatus" data-title="N Bindicator Status"  ></div>
+    </li>
+
+<%# WINK Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="Wink" data-view="HotStatus" data-title="WINK Status"  ></div>
+    </li>
+
+<%# South Bindicator Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="SBindicator" data-view="HotStatus" data-title="S Bindicator Status"  ></div>
+    </li>
+
+<%# Air Compressor 2 Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="AirCompressor2" onClick="location.href='http://10.2.48.26:3030/compressors'" data-view="HotStatus" data-title="Compressor 2 Status"  ></div>
+    </li>
+
+<%# Air Compressor 3 Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="AirCompressor3" onClick="location.href='http://10.2.48.26:3030/compressors'" data-suffix=" psi" data-view="HotStatus" data-title="Compressor 3 Status" ></div>
+    </li>
+
+<%# Molder link box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="Molder" onClick="location.href='http://10.2.48.26:3030/molders'" data-view="HotStatus" data-title="Molder Status"></div>
+    </li>
+
+<%# Saws link box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="Saws" onClick="location.href='http://10.2.48.26:3030/saws'" data-view="HotStatus" data-title="Saw Status"></div>
+    </li>
+
+<%# H1 Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="H1" data-view="HotStatus" data-title="H1 Status"  ></div>
+    </li>
+
+<%# Video Jet Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="VideoJet" data-view="HotStatus" data-title="Video Jet Status"  ></div>
+    </li>
+
+<%# Airlock 232 Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="airlock232" data-view="HotStatus" data-title="Airlock 232 Status"></div>
+    </li>
+
+<%# Airlock 484 Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="airlock484" data-view="HotStatus" data-title="Airlock 484 Status"></div>
+    </li>
+
+<%# Overdrive Status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="overdrive" data-view="HotStatus" data-title="Dust Collection Overload" ></div>
+    </li>
+
+<%# Mill Room status Box %>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="cs" data-view="HotStatus" onClick="location.href='http://10.2.48.39:3030/millroomdustcollection'" data-title="Mill Room Dust Collection" ></div>
+    </li>
+
+<%# Glue 401%>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+    <div data-id="gluelevel401" onClick="location.href='http://10.2.48.39:3030/glue'" data-suffix=" inches" data-view="Number" data-title="401 Glue" ></div>
+    </li>
+
+<%# Glue 116%>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+    <div data-id="gluelevel116" onClick="location.href='http://10.2.48.39:3030/glue'" data-suffix=" inches" data-view="Number" data-title="116 Glue" ></div>
+    </li>
+
+
+  </ul>
+<%# Bottom Crawler %>
+    <div data-id="ticker" data-view="Ticker" style="display: none;" ></div>
+</div>
